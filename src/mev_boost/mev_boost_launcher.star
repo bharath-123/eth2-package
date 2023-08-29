@@ -2,7 +2,7 @@ shared_utils = import_module("github.com/kurtosis-tech/eth2-package/src/shared_u
 mev_boost_context_module = import_module("github.com/kurtosis-tech/eth2-package/src/mev_boost/mev_boost_context.star")
 parse_input = import_module("github.com/kurtosis-tech/eth2-package/src/package_io/parse_input.star")
 
-FLASHBOTS_MEV_BOOST_IMAGE = "flashbots/mev-boost"
+FLASHBOTS_MEV_BOOST_IMAGE = "public.ecr.aws/t1d5h1w5/pepc-mev-boost:latest"
 FLASHBOTS_MEV_BOOST_PROTOCOL = "TCP"
 
 USED_PORTS = {
