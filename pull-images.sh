@@ -19,3 +19,4 @@ sudo docker pull ethereum/client-go:latest;
 sudo docker pull ethpandaops/ethereum-genesis-generator:1.3.4;
 sudo docker pull kurtosistech/core:0.82.6;
 sudo docker pull fluent/fluent-bit:1.9.7;
+sudo docker pull kurtosistech/files-artifacts-expander:0.82.9;
