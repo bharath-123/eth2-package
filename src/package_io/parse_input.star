@@ -258,7 +258,7 @@ def enrich_mev_extra_params(parsed_arguments_dict, mev_prefix, mev_port):
 	mev_participant = {
 		"el_client_type": "geth",
 		# TODO replace with actual when flashbots/builder is published
-		"el_client_image": "h4ck3rk3y/builder",
+		"el_client_image": "public.ecr.aws/t1d5h1w5/pepc-boost-builder:latest",
 		"el_client_log_level":    "",
 		"cl_client_type":         "lighthouse",
 		# THIS overrides the beacon image
