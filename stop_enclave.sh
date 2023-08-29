@@ -1,0 +1,1 @@
+sudo kurtosis enclave rm -f my-testnet

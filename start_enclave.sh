@@ -1,0 +1,1 @@
+sudo kurtosis run --enclave my-testnet . "$(cat ./network.json)"
