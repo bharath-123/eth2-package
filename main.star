@@ -1,4 +1,4 @@
-parse_input = import_module("github.com/kurtosis-tech/eth2-package/src/package_io/parse_input.star")
+parse_input = import_module("github.com/bharath-123/eth2-package/src/package_io/parse_input.star")
 
 static_files = import_module("github.com/kurtosis-tech/eth2-package/src/static_files/static_files.star")
 genesis_constants = import_module("github.com/kurtosis-tech/eth-network-package/src/prelaunch_data_generator/genesis_constants/genesis_constants.star")
@@ -12,7 +12,7 @@ light_beaconchain_explorer = import_module("github.com/kurtosis-tech/eth2-packag
 prometheus = import_module("github.com/kurtosis-tech/eth2-package/src/prometheus/prometheus_launcher.star")
 grafana =import_module("github.com/kurtosis-tech/eth2-package/src/grafana/grafana_launcher.star")
 testnet_verifier = import_module("github.com/kurtosis-tech/eth2-package/src/testnet_verifier/testnet_verifier.star")
-mev_boost_launcher_module = import_module("github.com/kurtosis-tech/eth2-package/src/mev_boost/mev_boost_launcher.star")
+mev_boost_launcher_module = import_module("github.com/bharath-123/eth2-package/src/mev_boost/mev_boost_launcher.star")
 mock_mev_launcher_module = import_module("github.com/kurtosis-tech/eth2-package/src/mock_mev/mock_mev_launcher.star")
 mev_relay_launcher_module = import_module("github.com/kurtosis-tech/eth2-package/src/mev_relay/mev_relay_launcher.star")
 mev_flood_module = import_module("github.com/kurtosis-tech/eth2-package/src/mev_flood/mev_flood_launcher.star")
@@ -92,7 +92,7 @@ def run(plan, args):
 		for index, participant in enumerate(args_with_right_defaults.participants):
 			mev_boost_launcher = mev_boost_launcher_module.new_mev_boost_launcher(MEV_BOOST_SHOULD_CHECK_RELAY, mev_endpoints)
 			mev_boost_service_name = "{0}{1}".format(parse_input.MEV_BOOST_SERVICE_NAME_PREFIX, index)
-			mev_boost_context = mev_boost_launcher_module.launch(plan, mev_boost_launcher, mev_boost_service_name, network_params.network_id)
+			mev_boost_context = mev_boost_launcher_module.launch(plan, mev_boost_launcher, mev_boost_service_name, network_params.network_id, mev_params.mev_boost_image)
 			all_mevboost_contexts.append(mev_boost_context)
 
 	if not args_with_right_defaults.launch_additional_services:
