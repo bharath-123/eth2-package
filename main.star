@@ -1,4 +1,4 @@
-parse_input = import_module("github.com/kurtosis-tech/eth2-package/src/package_io/parse_input.star")
+parse_input = import_module("github.com/bharath-123/eth2-package/src/package_io/parse_input.star")
 
 static_files = import_module("github.com/kurtosis-tech/eth2-package/src/static_files/static_files.star")
 genesis_constants = import_module("github.com/kurtosis-tech/eth-network-package/src/prelaunch_data_generator/genesis_constants/genesis_constants.star")
@@ -12,7 +12,7 @@ light_beaconchain_explorer = import_module("github.com/kurtosis-tech/eth2-packag
 prometheus = import_module("github.com/kurtosis-tech/eth2-package/src/prometheus/prometheus_launcher.star")
 grafana =import_module("github.com/kurtosis-tech/eth2-package/src/grafana/grafana_launcher.star")
 testnet_verifier = import_module("github.com/kurtosis-tech/eth2-package/src/testnet_verifier/testnet_verifier.star")
-mev_boost_launcher_module = import_module("github.com/kurtosis-tech/eth2-package/src/mev_boost/mev_boost_launcher.star")
+mev_boost_launcher_module = import_module("github.com/kurtosis-tech/bharath-123/src/mev_boost/mev_boost_launcher.star")
 mock_mev_launcher_module = import_module("github.com/kurtosis-tech/eth2-package/src/mock_mev/mock_mev_launcher.star")
 mev_relay_launcher_module = import_module("github.com/kurtosis-tech/eth2-package/src/mev_relay/mev_relay_launcher.star")
 mev_flood_module = import_module("github.com/kurtosis-tech/eth2-package/src/mev_flood/mev_flood_launcher.star")
