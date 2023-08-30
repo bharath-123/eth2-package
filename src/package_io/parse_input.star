@@ -222,7 +222,7 @@ def get_default_mev_params():
 	return {
 		"mev_relay_image": "flashbots/mev-boost-relay",
 		# TODO replace with actual when flashbots/builder is published
-		"mev_builder_image": "h4ck3rk3y/builder",
+		"mev_builder_image": "ethpandaops/flashbots-builder:main",
 		"mev_boost_image": "flashbots/mev-boost",
 		"mev_relay_api_extra_args": [],
 		"mev_relay_housekeeper_extra_args": [],

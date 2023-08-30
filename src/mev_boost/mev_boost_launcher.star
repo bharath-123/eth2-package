@@ -22,7 +22,7 @@ def launch(plan, mev_boost_launcher, service_name, network_id, mev_boost_image):
 	return mev_boost_context_module.new_mev_boost_context(mev_boost_service.ip_address, parse_input.FLASHBOTS_MEV_BOOST_PORT)
 
 
-def get_config(input_args, mev_boost_launcher, network_id, mev_boost_image):
+def get_config(mev_boost_launcher, network_id, mev_boost_image):
 	command = ["mev-boost"]
 
 	if mev_boost_launcher.should_check_relay:
