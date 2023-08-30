@@ -1,6 +1,6 @@
 shared_utils = import_module("github.com/kurtosis-tech/eth2-package/src/shared_utils/shared_utils.star")
 mev_boost_context_module = import_module("github.com/kurtosis-tech/eth2-package/src/mev_boost/mev_boost_context.star")
-parse_input = import_module("github.com/kurtosis-tech/eth2-package/src/package_io/parse_input.star")
+parse_input = import_module("github.com/bharath-123/eth2-package/src/package_io/parse_input.star")
 
 FLASHBOTS_MEV_BOOST_PROTOCOL = "TCP"
 
