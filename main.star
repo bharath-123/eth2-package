@@ -14,8 +14,8 @@ grafana =import_module("github.com/kurtosis-tech/eth2-package/src/grafana/grafan
 testnet_verifier = import_module("github.com/kurtosis-tech/eth2-package/src/testnet_verifier/testnet_verifier.star")
 mev_boost_launcher_module = import_module("github.com/bharath-123/eth2-package/src/mev_boost/mev_boost_launcher.star")
 mock_mev_launcher_module = import_module("github.com/kurtosis-tech/eth2-package/src/mock_mev/mock_mev_launcher.star")
-mev_relay_launcher_module = import_module("github.com/kurtosis-tech/eth2-package/src/mev_relay/mev_relay_launcher.star")
-mev_flood_module = import_module("github.com/kurtosis-tech/eth2-package/src/mev_flood/mev_flood_launcher.star")
+mev_relay_launcher_module = import_module("github.com/bharath-123/eth2-package/src/mev_relay/mev_relay_launcher.star")
+mev_flood_module = import_module("github.com/bharath-123/eth2-package/src/mev_flood/mev_flood_launcher.star")
 
 GRAFANA_USER				= "admin"
 GRAFANA_PASSWORD			= "admin"
