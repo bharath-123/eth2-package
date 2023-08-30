@@ -150,8 +150,7 @@ def parse_input(input_args):
 			mev_relay_website_extra_args = result["mev_params"]["mev_relay_website_extra_args"],
 			mev_builder_extra_args = result["mev_params"]["mev_builder_extra_args"],
 			mev_flood_image = result["mev_params"]["mev_flood_image"],
-			mev_flood_extra_args = result["mev_params"]["mev_flood_extra_args"],
-			mev_flood_seconds_per_bundle = result["mev_params"]["mev_flood_seconds_per_bundle"]
+			mev_flood_extra_args = result["mev_params"]["mev_flood_extra_args"]
 		),
 		launch_additional_services=result["launch_additional_services"],
 		wait_for_finalization=result["wait_for_finalization"],
@@ -224,8 +223,7 @@ def get_default_mev_params():
 		"mev_relay_website_extra_args": [],
 		"mev_builder_extra_args": [],
 		"mev_flood_image": "flashbots/mev-flood",
-		"mev_flood_extra_args": [],
-		"mev_flood_seconds_per_bundle": 15,
+		"mev_flood_extra_args": []
 	}
 
 
