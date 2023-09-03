@@ -30,7 +30,7 @@ def get_config(mev_boost_launcher, network_id, mev_boost_image):
 		command.append("-relay-check")
 
 	return ServiceConfig(
-		image = mev_boost_image,
+		image = FLASHBOTS_MEV_BOOST_IMAGE,
 		ports = USED_PORTS,
 		cmd = command,
 		env_vars = {
