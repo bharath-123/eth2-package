@@ -79,5 +79,7 @@ def get_config(
     )
 
 
-def new_mev_boost_launcher(relay_end_points):
-    return struct(relay_end_points=relay_end_points)
+def new_mev_boost_launcher(should_check_relay, relay_end_points):
+    return struct(
+        should_check_relay=should_check_relay, relay_end_points=relay_end_points
+    )
