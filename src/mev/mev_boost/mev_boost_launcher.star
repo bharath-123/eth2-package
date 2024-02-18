@@ -22,14 +22,13 @@ MAX_CPU = 500
 MIN_MEMORY = 16
 MAX_MEMORY = 256
 
-
 def launch(
     plan,
     mev_boost_launcher,
     service_name,
     network_id,
     mev_boost_image,
-    mev_boost_args
+    mev_boost_args,
     global_node_selectors,
 ):
     config = get_config(
@@ -39,7 +38,6 @@ def launch(
         mev_boost_args,
         global_node_selectors,
     )
-
     mev_boost_service = plan.add_service(service_name, config)
 
     return mev_boost_context_module.new_mev_boost_context(
